@@ -1,2 +1,2 @@
-cd /opt/test/sample_app
+cd /opt/sample_app
 bin/sample_app stop
