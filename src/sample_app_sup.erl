@@ -9,7 +9,7 @@
 
 -export([start_link/0]).
 
--export([init/1]).
+-export([init/1, test_func/0]).
 
 -define(SERVER, ?MODULE).
 
@@ -29,7 +29,12 @@ init([]) ->
     SupFlags = #{strategy => one_for_all,
                  intensity => 0,
                  period => 1},
-    ChildSpecs = [],
+    ChildSpecs = [
+      {sample_app_admin_svr, {sample_app_admin_svr, start_link, []}, permanent, 10000, worker, [sample_app_admin_svr]}
+    ],
     {ok, {SupFlags, ChildSpecs}}.
 
 %% internal functions
+test_func() ->
+    1+1.
+
