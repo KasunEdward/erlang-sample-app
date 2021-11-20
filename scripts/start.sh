@@ -1,2 +1,2 @@
 cd /opt/sample_app
-bin/sample_app start
+bin/sample_app daemon
