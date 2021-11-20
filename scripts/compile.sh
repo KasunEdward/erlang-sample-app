@@ -1,3 +1,4 @@
+cd /opt/codedeploy-agent/deployment-root/$DEPLOYMENT_GROUP_ID/$DEPLOYMENT_ID/deployment-archive
 mkdir -p /opt/sample_app
 chown ubuntu /opt/sample_app
 export PATH=$PATH:~/.cache/rebar3/bin
