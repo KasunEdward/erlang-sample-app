@@ -33,7 +33,7 @@ start_link() ->
   gen_server:start_link({local, ?SERVER}, ?MODULE, [], []).
 
 test_func() ->
-  io:fwrite("admin svr test_func ~w",[111]).
+  io:fwrite("admin svr test_func ~w",[122]).
 
 
 %%%===================================================================
